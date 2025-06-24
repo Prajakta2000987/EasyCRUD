@@ -11,7 +11,7 @@ RUN npm install && npm run build
 RUN rm -f /var/www/localhost/htdocs/*
 
 
-RUN cp -rf dist/* /var/www/localhost/htdocs/
+RUN cp dist/* /var/www/localhost/htdocs/
 
 RUN apk update && apk add apache2
 
