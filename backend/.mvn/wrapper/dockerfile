@@ -8,8 +8,6 @@ WORKDIR /opt
 
 RUN cp -f application.properties src/main/resources/application.properties
 
-
-
 RUN mvn clean package
 
 WORKDIR /opt/target/
