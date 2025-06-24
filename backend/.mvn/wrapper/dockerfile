@@ -8,10 +8,13 @@ WORKDIR /opt
 
 RUN cp -f application.properties src/main/resources/application.properties
 
+
+
 RUN mvn clean package
 
 WORKDIR /opt/target/
 
 EXPOSE 8080
+
 
 CMD ["java", "-java", "student-registration-backend.0.0.1-SNAPSHOT.jar"]
