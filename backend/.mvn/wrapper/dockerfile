@@ -14,5 +14,4 @@ WORKDIR /opt/target/
 
 EXPOSE 8080
 
-
 CMD ["java", "-java", "student-registration-backend.0.0.1-SNAPSHOT.jar"]
