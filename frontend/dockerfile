@@ -10,7 +10,7 @@ RUN npm install && npm run build
 RUN apk update && apk add apache2
 
 RUN rm -f /var/www/localhost/htdocs/*
-RUN cp dist/* /var/wwww/localhost/htdocs/
+COPY dist/* /var/wwww/localhost/htdocs/
 
 EXPOSE 80
 
