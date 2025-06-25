@@ -7,7 +7,6 @@ WORKDIR /opt
 
 RUN npm install && npm run build
 
-
 RUN rm -f /var/www/localhost/htdocs/*
 
 RUN cp dist/* /var/www/localhost/htdocs/
