@@ -18,7 +18,7 @@ RUN rm -rf /var/www/localhost/htdocs/* && \
     cp -rf dist/* /var/www/localhost/htdocs/
 
 
-EXPOSE 80
+EXPOSE 8080
 
 
 ENTRYPOINT ["httpd","-D","FOREGROUND"]
