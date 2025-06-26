@@ -8,7 +8,7 @@ services:
       MYSQL_ROOT_PASSWORD: redhat
       MYSQL_DATABASE: student_db
     volumes:
-      - mariadb_data:/var/lib/MYSQL_DATABASE
+      - mariadb_data:/var/lib/mysql
 
   backend:
     build:
